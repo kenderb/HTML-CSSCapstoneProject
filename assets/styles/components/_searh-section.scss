@@ -1,0 +1,78 @@
+@import 'button-base';
+
+.search-section {
+  background-image: linear-gradient(#140909, #03030334, #0e0e0e), url('/assets/images/BG-imge-searh-section.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+  padding-top: 5rem;
+  text-align: center;
+
+  button {
+    @include button( white);
+
+    font-weight: bolder;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+.header-styling {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  width: 90vw;
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
+}
+
+.search-form {
+  font-weight: bolder;
+  line-height: 2.5rem;
+  width: 90vw;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: transparentize($secondary-color, 0.4);
+
+  input {
+    @include button( white);
+
+    width: 100%;
+  }
+
+  .button-form {
+    color: $secondary-color;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    margin-top: 0.4rem;
+    width: 100%;
+
+    @include button($primary-color);
+  }
+}
+
+.d-flex-col {
+  @include display-flex(column);
+}
+
+@media screen and (min-width: 768px) {
+  .d-flex-col {
+    @include display-flex(row);
+  }
+
+  .search-form {
+    max-width: 60rem;
+    padding: 2rem;
+
+    .button-form {
+      color: $secondary-color;
+      font-weight: bolder;
+      font-size: 0.8rem;
+      margin-top: auto;
+      width: 35%;
+    }
+  }
+}

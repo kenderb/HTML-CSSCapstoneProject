@@ -2,9 +2,14 @@
 @import 'components/navbar';
 @import 'components/variables';
 @import 'components/fonts';
+@import 'components/searh-section';
 
 body {
   font-family: Quicksand-Variable, sans-serif;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .bg-red {
