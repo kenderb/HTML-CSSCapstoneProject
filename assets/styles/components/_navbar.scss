@@ -1,0 +1,97 @@
+@import 'flex-box';
+@import 'variables';
+
+.navbar {
+  @include display-flex(column);
+
+  position: static;
+  padding: 0.5rem 1rem;
+  color: $secondary-color;
+
+  img {
+    width: 1.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline;
+    }
+  }
+
+  button {
+    color: $secondary-color;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($primary-color, 8);
+    }
+
+    i {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $primary-color;
+  border-bottom: 0.1rem solid gray;
+}
+
+.brand {
+  margin: 0.5rem;
+  width: 11rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.nav-text-display {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    @include display-flex(row);
+
+    justify-content: space-between;
+
+    li {
+      padding-right: 1rem;
+
+      a {
+        color: $secondary-color;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:hover {
+        background-color: lighten($primary-color, 8);
+      }
+    }
+
+    button {
+      padding: 0.8rem 0.8rem;
+    }
+  }
+
+  .nav-text-display {
+    display: inline;
+  }
+}
