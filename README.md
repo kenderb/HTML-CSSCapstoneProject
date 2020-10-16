@@ -44,12 +44,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/KBTarts )
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kender-bolivar-1736086b/ )
 
-👤 **Juan Raudales**
-
-- GitHub: [@githubhandle](https://github.com/Jarfsoft)
-- Twitter: [@twitterhandle](https://twitter.com/Jarfsoft)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-raudales-flores-7b0a3b113/)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
