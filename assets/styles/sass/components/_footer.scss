@@ -3,7 +3,6 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 .ul-container {
   padding: 2rem;
   text-align: center;
-  position: relative;
 }
 
 .ul-bottom {
@@ -11,6 +10,8 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 }
 
 .ul-footer {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
   font-size: 0.8rem;
   border-top: $border-theme;
   border-bottom: $border-theme;
@@ -32,12 +33,14 @@ $border-theme: 1px solid  darken($gray-one, 70%);
   margin: auto;
   $width-logo: 5rem;
 
+  overflow: hidden;
   width: $width-logo;
   height: $width-logo;
   border: $border-theme;
   border-radius: 50%;
 
   img {
+    background-color: $black-one;
     padding: 1.6rem;
     width: $width-logo;
   }

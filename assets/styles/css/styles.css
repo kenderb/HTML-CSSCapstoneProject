@@ -340,7 +340,6 @@ header {
 .ul-container {
   padding: 2rem;
   text-align: center;
-  position: relative;
 }
 
 .ul-bottom {
@@ -348,6 +347,8 @@ header {
 }
 
 .ul-footer {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
   font-size: 0.8rem;
   border-top: 1px solid #3e3e3e;
   border-bottom: 1px solid #3e3e3e;
@@ -367,6 +368,7 @@ header {
 .logo-footer-container {
   background-color: #181818;
   margin: auto;
+  overflow: hidden;
   width: 5rem;
   height: 5rem;
   border: 1px solid #3e3e3e;
@@ -374,6 +376,7 @@ header {
 }
 
 .logo-footer-container img {
+  background-color: #181818;
   padding: 1.6rem;
   width: 5rem;
 }
