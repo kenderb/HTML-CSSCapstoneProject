@@ -338,12 +338,22 @@ header {
 }
 
 .more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .ul-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 2rem;
   text-align: center;
+  align-items: stretch;
 }
 
 .ul-footer {
@@ -389,6 +399,10 @@ header {
   margin-bottom: 1rem;
 }
 
+.subscirbe-footer form {
+  width: 15rem;
+}
+
 .subscirbe-footer button {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
@@ -397,6 +411,7 @@ header {
   padding: 0.5rem;
   color: white;
   margin-left: -1rem;
+  width: 5.2rem;
 }
 
 .subscirbe-footer input {
@@ -444,6 +459,23 @@ header {
 
 .footer-footer a {
   color: gray;
+}
+
+@media screen and (min-width: 768px) {
+  .more-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .social-media-icons {
+    margin-bottom: 0;
+  }
+  .ul-container {
+    flex-direction: row;
+  }
 }
 
 body {

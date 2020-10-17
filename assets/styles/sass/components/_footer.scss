@@ -1,12 +1,18 @@
 $border-theme: 1px solid  darken($gray-one, 70%);
 
 .more-container {
+  @include display-flex(column);
+
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .ul-container {
+  @include display-flex(column);
+
   padding: 2rem;
   text-align: center;
+  align-items: stretch;
 }
 
 .ul-footer {
@@ -53,11 +59,16 @@ $border-theme: 1px solid  darken($gray-one, 70%);
     margin-bottom: 1rem;
   }
 
+  form {
+    width: 15rem;
+  }
+
   button {
     @include button(gray);
     @include footer-buttons;
 
     margin-left: -1rem;
+    width: 5.2rem;
   }
 
   input {
@@ -99,5 +110,25 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 
   a {
     color: gray;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-media-icons {
+    margin-bottom: 0;
+  }
+
+  .ul-container {
+    flex-direction: row;
   }
 }
