@@ -42,9 +42,13 @@
     order: -2;
   }
 
+  .last-section-content {
+    padding: 2rem 4rem;
+  }
+
   .last-section {
     .d-flex-col {
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     img {
@@ -57,6 +61,7 @@
   .last-section {
     .d-flex-col {
       justify-content: center;
+
     }
 
     img {

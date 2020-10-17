@@ -302,8 +302,11 @@ header {
   .section-text {
     order: -2;
   }
+  .last-section-content {
+    padding: 2rem 4rem;
+  }
   .last-section .d-flex-col {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .last-section img {
     padding: 0;

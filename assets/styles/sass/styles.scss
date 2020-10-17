@@ -29,9 +29,11 @@ body {
 .bg-three {
   background-color: $third-color;
 }
+
 .text-color-one {
   color: $primary-color;
 }
+
 .text-color-two {
   color: desaturate($third-color, 60%);
 }
