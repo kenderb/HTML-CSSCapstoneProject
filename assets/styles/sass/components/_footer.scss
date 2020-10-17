@@ -8,8 +8,6 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 }
 
 .ul-container {
-  @include display-flex(column);
-
   padding: 2rem;
   text-align: center;
   align-items: stretch;
@@ -35,6 +33,7 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 }
 
 .logo-footer-container {
+  z-index: 2;
   background-color: $black-one;
   margin: auto;
   $width-logo: 5rem;
@@ -117,6 +116,8 @@ $border-theme: 1px solid  darken($gray-one, 70%);
   .more-container {
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+    bottom: 1rem;
   }
 
   .footer-footer {
@@ -128,7 +129,37 @@ $border-theme: 1px solid  darken($gray-one, 70%);
     margin-bottom: 0;
   }
 
-  .ul-container {
-    flex-direction: row;
+  .ul-footer {
+    width: 45%;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .logo-footer-container {
+    top: 2.2rem;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-footer-container {
+    top: 3.5rem;
+    width: 8rem;
+    height: 8rem;
+
+    img {
+      width: 8rem;
+    }
+  }
+
+  .ul-footer {
+    li {
+      padding: 3%;
+      font-size: 0.8rem;
+    }
   }
 }
