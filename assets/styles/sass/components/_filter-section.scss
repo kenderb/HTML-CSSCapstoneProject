@@ -1,0 +1,63 @@
+@mixin width-inputs {
+  width: 45%;
+}
+
+.form-search-container {
+  margin: 2.5rem 1rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: $gray-one;
+  text-align: center;
+
+  h2 {
+    color: gray;
+  }
+}
+
+.form-filter-container {
+  margin-top: 1rem;
+
+  @include display-flex(column);
+}
+
+.input-container {
+  @include display-flex(row);
+
+  font-weight: bolder;
+  margin: 0.5rem 0;
+  width: 100%;
+  justify-content: space-between;
+
+  select {
+    @include button(white);
+    @include button-font(black);
+    @include width-inputs;
+
+    padding: 0.5rem;
+    appearance: none;
+  }
+
+  input {
+    @include button(white);
+    @include button-font(black);
+    @include width-inputs;
+
+    padding: 0.5rem;
+  }
+}
+
+.search-button {
+  @include button($third-color);
+  @include button-font(white);
+}
+
+.clear-button {
+  @include button(adjust-hue($primary-color, 20deg));
+  @include button-font(white);
+}
+
+@media screen and (min-width: 1024px) {
+  .form-filter-container {
+    flex-direction: row;
+  }
+}

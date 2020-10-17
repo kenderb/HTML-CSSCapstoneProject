@@ -9,3 +9,10 @@
   padding: 0.5rem;
   color: white;
 }
+
+@mixin button-font($font-color) {
+  color: $font-color;
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
