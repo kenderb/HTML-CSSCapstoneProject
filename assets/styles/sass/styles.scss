@@ -5,6 +5,7 @@
 @import 'components/searh-section';
 @import 'components/steps-section';
 @import 'components/last-section';
+@import 'components/footer';
 
 body {
   font-family: Quicksand-Variable, sans-serif;
@@ -30,12 +31,31 @@ body {
   background-color: $third-color;
 }
 
+.bg-black {
+  background-color: $black-one;
+}
+
+.bg-dark-gray {
+  background-color: lighten($black-one, 5%);
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
 .text-color-one {
   color: $primary-color;
 }
 
 .text-color-two {
   color: desaturate($third-color, 60%);
+}
+
+.text-color-three {
+  color: $gray-one;
 }
 
 .rounded {

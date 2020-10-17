@@ -337,6 +337,47 @@ header {
   }
 }
 
+.ul-container {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.ul-bottom {
+  margin-top: 0rem;
+}
+
+.ul-footer {
+  font-size: 0.8rem;
+  border-top: 1px solid #3e3e3e;
+  border-bottom: 1px solid #3e3e3e;
+  padding: 1rem 0;
+}
+
+.ul-footer a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.ul-footer li {
+  margin: 0.5rem;
+  display: inline;
+}
+
+.logo-footer-container {
+  background-color: #181818;
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #3e3e3e;
+  border-radius: 50%;
+}
+
+.logo-footer-container img {
+  padding: 1.6rem;
+  width: 5rem;
+}
+
 body {
   font-family: Quicksand-Variable, sans-serif;
 }
@@ -361,12 +402,32 @@ body {
   background-color: #18a8bb;
 }
 
+.bg-black {
+  background-color: #181818;
+}
+
+.bg-dark-gray {
+  background-color: #252525;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
 .text-color-one {
   color: #e75744;
 }
 
 .text-color-two {
   color: #57777c;
+}
+
+.text-color-three {
+  color: #f0f0f0;
 }
 
 .rounded {
