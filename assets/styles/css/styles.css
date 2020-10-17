@@ -337,19 +337,19 @@ header {
   }
 }
 
+.more-container {
+  padding: 1rem;
+}
+
 .ul-container {
   padding: 2rem;
   text-align: center;
 }
 
-.ul-bottom {
-  margin-top: 0rem;
-}
-
 .ul-footer {
   margin-top: -1rem;
   margin-bottom: -1rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border-top: 1px solid #3e3e3e;
   border-bottom: 1px solid #3e3e3e;
   padding: 1rem 0;
@@ -381,8 +381,81 @@ header {
   width: 5rem;
 }
 
+.subscirbe-footer {
+  text-align: center;
+}
+
+.subscirbe-footer h4 {
+  margin-bottom: 1rem;
+}
+
+.subscirbe-footer button {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: gray;
+  padding: 0.5rem;
+  color: white;
+  margin-left: -1rem;
+}
+
+.subscirbe-footer input {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: #181818;
+  padding: 0.5rem;
+  color: white;
+}
+
+.tex-footer {
+  text-align: center;
+}
+
+.tex-footer h4 {
+  margin: 1rem;
+}
+
+.tex-footer a {
+  color: #e75744;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.social-media-icons {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.social-media-icons li {
+  display: inline;
+  margin: 0.2rem;
+}
+
+.footer-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  padding: 1.5rem;
+}
+
+.footer-footer a {
+  color: gray;
+}
+
 body {
   font-family: Quicksand-Variable, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .m-auto {
@@ -410,7 +483,7 @@ body {
 }
 
 .bg-dark-gray {
-  background-color: #252525;
+  background-color: #323232;
 }
 
 .p-absolute {

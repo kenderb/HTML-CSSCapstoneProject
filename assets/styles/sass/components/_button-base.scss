@@ -4,3 +4,8 @@
   border-radius: 0.2rem;
   background-color: $bg-color;
 }
+
+@mixin footer-buttons {
+  padding: 0.5rem;
+  color: white;
+}
