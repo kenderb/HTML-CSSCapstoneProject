@@ -33,6 +33,7 @@
 }
 
 .small-text {
+  max-width: 25rem;
   font-size: 0.7rem;
   margin-top: 0.5rem;
 }
@@ -59,15 +60,18 @@
 
 @media screen and (min-width: 1024px) {
   .last-section {
-    .d-flex-col {
-      justify-content: center;
-
-    }
-
     img {
       margin-left: 9rem;
-      width: 25rem;
+      width: 20rem;
     }
+
+    .d-flex-col {
+      justify-content: space-evenly;
+    }
+  }
+
+  .last-section-content {
+    padding: 2rem 10rem;
   }
 
   .section-text {
