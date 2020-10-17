@@ -1,0 +1,25 @@
+@import '../components/reset';
+@import '../components/navbar';
+@import '../components/variables';
+@import '../components/fonts';
+@import '../components/searh-section';
+@import '../components/steps-section';
+@import '../components/last-section';
+
+body {
+  font-family: Quicksand-Variable, sans-serif;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.bg-red {
+  background-color: $red-color;
+}
+
+.d-flex-row {
+  @include display-flex(row);
+
+  justify-content: space-between;
+}
