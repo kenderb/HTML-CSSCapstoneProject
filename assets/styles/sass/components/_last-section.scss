@@ -60,13 +60,13 @@
 
 @media screen and (min-width: 1024px) {
   .last-section {
+
     img {
-      margin-left: 9rem;
       width: 20rem;
     }
 
     .d-flex-col {
-      justify-content: space-evenly;
+      justify-content: center;
     }
   }
 
@@ -76,6 +76,7 @@
 
   .section-text {
     font-size: 2rem;
+    width: 50%;
 
     button {
       margin-top: 5rem;
