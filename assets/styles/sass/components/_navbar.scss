@@ -43,8 +43,8 @@ header {
   }
 }
 
-.bg-primary {
-  background-color: $primary-color;
+.bg-primary-nav {
+  background-color: transparentize($primary-color, 0.08);
   border-bottom: 0.1rem solid gray;
 }
 

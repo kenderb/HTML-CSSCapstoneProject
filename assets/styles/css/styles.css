@@ -61,8 +61,8 @@ header {
   font-size: 1.3rem;
 }
 
-.bg-primary {
-  background-color: #e75744;
+.bg-primary-nav {
+  background-color: rgba(231, 87, 68, 0.92);
   border-bottom: 0.1rem solid gray;
 }
 
