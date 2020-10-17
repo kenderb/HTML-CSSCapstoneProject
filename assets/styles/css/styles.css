@@ -207,6 +207,7 @@ header {
 
 .steps-section {
   margin-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .steps-section h1 {
@@ -260,6 +261,75 @@ header {
   }
 }
 
+.last-section {
+  font-weight: bolder;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.last-section img {
+  width: 15rem;
+  padding: 1.2rem;
+  order: -1;
+}
+
+.last-section-content {
+  padding: 1rem;
+}
+
+.section-text {
+  font-size: 1.1rem;
+}
+
+.section-text button {
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: white;
+  padding: 0.8rem;
+}
+
+.small-text {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-text {
+    order: -2;
+  }
+  .last-section .d-flex-col {
+    justify-content: space-around;
+  }
+  .last-section img {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .last-section .d-flex-col {
+    justify-content: center;
+  }
+  .last-section img {
+    margin-left: 9rem;
+    width: 25rem;
+  }
+  .section-text {
+    font-size: 2rem;
+  }
+  .section-text button {
+    margin-top: 5rem;
+    font-size: 1rem;
+  }
+  .small-text {
+    font-size: 1rem;
+  }
+}
+
 body {
   font-family: Quicksand-Variable, sans-serif;
 }
@@ -270,6 +340,30 @@ body {
 
 .bg-red {
   background-color: #d14949;
+}
+
+.bg-one {
+  background-color: #e75744;
+}
+
+.bg-two {
+  background-color: #57777c;
+}
+
+.bg-three {
+  background-color: #18a8bb;
+}
+
+.text-color-one {
+  color: #e75744;
+}
+
+.text-color-two {
+  color: #57777c;
+}
+
+.rounded {
+  border-radius: 50%;
 }
 
 .d-flex-row {

@@ -1,10 +1,10 @@
-@import '../components/reset';
-@import '../components/navbar';
-@import '../components/variables';
-@import '../components/fonts';
-@import '../components/searh-section';
-@import '../components/steps-section';
-@import '../components/last-section';
+@import 'components/reset';
+@import 'components/navbar';
+@import 'components/variables';
+@import 'components/fonts';
+@import 'components/searh-section';
+@import 'components/steps-section';
+@import 'components/last-section';
 
 body {
   font-family: Quicksand-Variable, sans-serif;
@@ -16,6 +16,28 @@ body {
 
 .bg-red {
   background-color: $red-color;
+}
+
+.bg-one {
+  background-color: $primary-color;
+}
+
+.bg-two {
+  background-color: desaturate($third-color, 60%);
+}
+
+.bg-three {
+  background-color: $third-color;
+}
+.text-color-one {
+  color: $primary-color;
+}
+.text-color-two {
+  color: desaturate($third-color, 60%);
+}
+
+.rounded {
+  border-radius: 50%;
 }
 
 .d-flex-row {

@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'button-base';
+
+.last-section {
+  font-weight: bolder;
+  color: $secondary-color;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  img {
+    width: 15rem;
+    padding: 1.2rem;
+    order: -1;
+  }
+}
+
+.last-section-content {
+  padding: 1rem;
+}
+
+.section-text {
+  font-size: 1.1rem;
+
+  button {
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 0.8rem;
+
+    @include button(white);
+
+    padding: 0.8rem;
+  }
+}
+
+.small-text {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-text {
+    order: -2;
+  }
+
+  .last-section {
+    .d-flex-col {
+      justify-content: space-around;
+    }
+
+    img {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .last-section {
+    .d-flex-col {
+      justify-content: center;
+    }
+
+    img {
+      margin-left: 9rem;
+      width: 25rem;
+    }
+  }
+
+  .section-text {
+    font-size: 2rem;
+
+    button {
+      margin-top: 5rem;
+      font-size: 1rem;
+    }
+  }
+
+  .small-text {
+    font-size: 1rem;
+  }
+}
