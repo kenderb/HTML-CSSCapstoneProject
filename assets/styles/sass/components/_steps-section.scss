@@ -39,6 +39,10 @@
   &:hover,
   &:active {
     @include bg-hover;
+
+    transform: scale(1.02);
+    box-shadow: 1rem 0.8rem 0.8rem 0 #4444443f;
+    cursor: pointer;
   }
 }
 

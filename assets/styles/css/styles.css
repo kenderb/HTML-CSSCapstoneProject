@@ -73,6 +73,10 @@ header {
   font-weight: bolder;
 }
 
+.brand a {
+  color: white;
+}
+
 .d-inline {
   display: inline;
 }
@@ -239,7 +243,10 @@ header {
 }
 
 .steps-content:hover, .steps-content:active {
-  background-color: #d8f6fa;
+  background-color: #f2fdef;
+  transform: scale(1.02);
+  box-shadow: 1rem 0.8rem 0.8rem 0 #4444443f;
+  cursor: pointer;
 }
 
 .steps-grid {
@@ -572,5 +579,11 @@ a:hover {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+
+button:hover {
+  background-color: #f2fdef;
+  color: #0d0210;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

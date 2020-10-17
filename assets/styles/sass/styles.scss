@@ -76,3 +76,9 @@ a {
 
   justify-content: space-between;
 }
+
+button:hover {
+  background-color: $hover-color;
+  color: invert($hover-color);
+  cursor: pointer;
+}
