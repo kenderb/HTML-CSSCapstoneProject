@@ -40,6 +40,8 @@
   input {
     @include button( white);
 
+    font-size: 0.8rem;
+    font-weight: bold;
     width: 100%;
   }
 
