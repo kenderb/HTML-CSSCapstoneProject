@@ -621,74 +621,83 @@ header {
 }
 
 .bg-image-1 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-1.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-2 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-2.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-3 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-3.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-4 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-4.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-5 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-5.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-6 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-6.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-7 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-7.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-8 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-8.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
 .bg-image-9 {
-  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-9.jpg");
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
   border-radius: 0.5rem;
 }
 
@@ -704,6 +713,7 @@ header {
 }
 
 .searh-iten button {
+  margin-top: auto;
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
@@ -727,21 +737,15 @@ header {
   border-radius: 1rem;
   margin: 1rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(10.2em, 1fr));
   grid-gap: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .results-container {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .results-container {
+    grid-template-columns: repeat(5, 1fr);
     margin: 2rem auto;
     width: 85%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
