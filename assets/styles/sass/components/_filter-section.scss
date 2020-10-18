@@ -76,6 +76,7 @@
 
     align-items: flex-end;
     height: 5rem;
+
     button + button {
       margin-left: 0.5rem;
     }
@@ -83,5 +84,9 @@
 
   .clear-button {
     width: 10rem;
+  }
+
+  .form-search-container {
+    padding: 4rem 5rem;
   }
 }

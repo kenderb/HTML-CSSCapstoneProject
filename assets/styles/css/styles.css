@@ -615,6 +615,9 @@ header {
   .clear-button {
     width: 10rem;
   }
+  .form-search-container {
+    padding: 4rem 5rem;
+  }
 }
 
 body {
