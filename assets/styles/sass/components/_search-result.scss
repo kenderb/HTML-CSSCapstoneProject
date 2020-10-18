@@ -13,8 +13,6 @@ $number-of-images: 9;
 @for $i from 1 through $number-of-images {
   .bg-image-#{$i} {
     @include bg-image('/assets/images/bg-#{$i}.jpg');
-
-    border-radius: 0.5rem;
   }
 }
 
@@ -32,6 +30,7 @@ $number-of-images: 9;
 
   button {
     margin-top: auto;
+
     @include button($primary-color);
     @include button-font(white);
 
