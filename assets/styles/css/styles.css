@@ -620,6 +620,78 @@ header {
   }
 }
 
+.bg-image-1 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-2 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-3 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-4 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-5 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-6 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-7 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-8 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-image-9 {
+  background-image: linear-gradient(#140909, rgba(4, 26, 29, 0.6), #0e0e0e), url("/assets/images/bg-9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
 .result-section h1 {
   text-align: center;
 }
@@ -628,7 +700,6 @@ header {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: #d14949;
   padding: 1rem;
 }
 
@@ -644,10 +715,34 @@ header {
   padding: 0.7rem;
 }
 
+.searh-iten a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .results-container {
+  padding: 3rem;
+  background-color: rgba(231, 87, 68, 0.2);
+  border-radius: 1rem;
   margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .results-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .results-container {
+    margin: 2rem auto;
+    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 body {

@@ -1,5 +1,20 @@
-
 $box-size: 100%;
+
+@mixin bg-image($image-path) {
+  background-image: linear-gradient(#140909, transparentize(darken($third-color, 35%), 0.4), #0e0e0e), url($image-path);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+$number-of-images: 9;
+
+@for $i from 1 through $number-of-images {
+  .bg-image-#{$i} {
+    @include bg-image('/assets/images/bg-#{$i}.jpg');
+    border-radius: 0.5rem;
+  }
+}
 
 .result-section {
   h1 {
@@ -11,7 +26,6 @@ $box-size: 100%;
   text-align: center;
   width: $box-size;
   height: $box-size;
-  background-color: $red-color;
   padding: 1rem;
 
   button {
@@ -20,10 +34,34 @@ $box-size: 100%;
 
     padding: 0.7rem;
   }
+
+  a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }
 
 .results-container {
+  padding: 3rem;
+  background-color: transparentize($primary-color, 0.8);
+  border-radius: 1rem;
   margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .results-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .results-container {
+    margin: 2rem auto;
+    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
