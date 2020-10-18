@@ -1,3 +1,9 @@
-document.getElementById("search").onclick = function () {
-  location.href = "./search-result.html";
-};
+
+const listSearchTag = document.querySelectorAll(".search");
+
+listSearchTag.forEach(element => {
+  element.onclick = function () {
+    location.href = "./search-result.html";
+  };
+});
+
