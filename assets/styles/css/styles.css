@@ -740,6 +740,147 @@ header {
   }
 }
 
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-description-image {
+  width: 5rem;
+}
+
+.name-store {
+  font-size: 1.5rem;
+}
+
+.description-section {
+  margin: 1rem;
+  margin-top: 5rem;
+  border: 0.1rem solid #5a5a5a23;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background: #f0f0f0;
+}
+
+.description-section button {
+  display: block;
+  margin-left: auto;
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: #18a8bb;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.description-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 1rem auto;
+}
+
+.description-iten {
+  padding: 1rem;
+  border: 0.1rem solid #1f96db4f;
+  text-align: center;
+  font-weight: bold;
+}
+
+.description-iten span {
+  margin-left: 1rem;
+  color: #18a8bb;
+}
+
+.description-iten:hover {
+  box-shadow: 0.1rem 0.1rem 0.8rem 0 #18a8bb;
+}
+
+.text-description {
+  text-align: justify;
+  margin: 2rem;
+}
+
+.map-section {
+  color: #e75744;
+  margin: 2rem;
+}
+
+.map-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.map-section iframe {
+  height: 20rem;
+}
+
+.central-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.central-container img {
+  border-radius: 0.3rem;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.score-container span {
+  color: #e75744;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .description-section button {
+    margin-right: 4.1rem;
+  }
+  .description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 10%);
+    align-items: center;
+  }
+  .central-container {
+    flex-direction: row;
+  }
+  .central-container img {
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 3rem);
+    margin: 4rem;
+    flex: 2;
+  }
+  .description-section {
+    margin: 4rem;
+  }
+  .description-section button {
+    margin-right: 6rem;
+    margin-bottom: 1rem;
+  }
+  .text-description {
+    margin: auto 10rem;
+  }
+  .map-section {
+    margin: 3rem 15rem;
+  }
+  .central-container img {
+    flex: 1;
+  }
+}
+
 body {
   background: white;
   font-family: Quicksand-Variable, sans-serif;
