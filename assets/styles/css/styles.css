@@ -620,6 +620,36 @@ header {
   }
 }
 
+.result-section h1 {
+  text-align: center;
+}
+
+.searh-iten {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #d14949;
+  padding: 1rem;
+}
+
+.searh-iten button {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: #e75744;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  padding: 0.7rem;
+}
+
+.results-container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 body {
   background: white;
   font-family: Quicksand-Variable, sans-serif;
