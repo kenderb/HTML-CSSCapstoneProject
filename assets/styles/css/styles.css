@@ -593,9 +593,32 @@ header {
   .form-filter-container {
     flex-direction: row;
   }
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input-container input,
+  .input-container select {
+    width: 95%;
+  }
+  .buttons-filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 5rem;
+  }
+  .buttons-filter-container button + button {
+    margin-left: 0.5rem;
+  }
+  .clear-button {
+    width: 10rem;
+  }
 }
 
 body {
+  background: white;
   font-family: Quicksand-Variable, sans-serif;
 }
 

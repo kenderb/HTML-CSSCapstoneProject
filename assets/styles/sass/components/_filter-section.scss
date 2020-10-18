@@ -60,4 +60,28 @@
   .form-filter-container {
     flex-direction: row;
   }
+
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    input,
+    select {
+      width: 95%;
+    }
+  }
+
+  .buttons-filter-container {
+    @include display-flex(row);
+
+    align-items: flex-end;
+    height: 5rem;
+    button + button {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .clear-button {
+    width: 10rem;
+  }
 }
