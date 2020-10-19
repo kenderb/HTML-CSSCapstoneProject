@@ -76,12 +76,12 @@ iframe {
 
   justify-content: stretch;
   align-items: stretch;
+  margin-top: 2rem;
 
   img {
     border-radius: 0.3rem;
     display: block;
     margin: auto;
-    width: 80%;
   }
 }
 
@@ -109,7 +109,7 @@ iframe {
     flex-direction: row;
 
     img {
-      margin: 1rem;
+      margin: auto 1rem;
     }
   }
 }
@@ -141,6 +141,7 @@ iframe {
 
   .central-container {
     img {
+      margin-left: 4rem;
       flex: 1;
     }
   }

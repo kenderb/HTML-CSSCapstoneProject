@@ -54,7 +54,7 @@ header {
 }
 
 .navbar button:hover {
-  background-color: #ec7768;
+  background-color: #f8734a;
 }
 
 .navbar button i {
@@ -62,7 +62,7 @@ header {
 }
 
 .bg-primary-nav {
-  background-color: rgba(231, 87, 68, 0.92);
+  background-color: rgba(247, 84, 35, 0.92);
   border-bottom: 0.1rem solid gray;
 }
 
@@ -105,7 +105,7 @@ header {
     text-decoration: underline;
   }
   .navbar li:hover {
-    background-color: #ec7768;
+    background-color: #f8734a;
   }
   .navbar button {
     padding: 0.8rem 0.8rem;
@@ -179,7 +179,7 @@ header {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
-  background-color: #e75744;
+  background-color: #f75423;
 }
 
 .d-flex-col {
@@ -219,7 +219,7 @@ header {
   text-align: center;
   font-size: 1.3rem;
   font-weight: bolder;
-  color: #e75744;
+  color: #f75423;
 }
 
 .steps-content {
@@ -243,7 +243,7 @@ header {
 }
 
 .steps-content:hover, .steps-content:active {
-  background-color: #f2fdef;
+  background-color: #fefffe;
   transform: scale(1.02);
   box-shadow: 1rem 0.8rem 0.8rem 0 #4444443f;
   cursor: pointer;
@@ -396,7 +396,9 @@ header {
 }
 
 .subscirbe-footer {
+  flex: 20%;
   text-align: center;
+  margin: auto;
 }
 
 .subscirbe-footer h4 {
@@ -404,7 +406,8 @@ header {
 }
 
 .subscirbe-footer form {
-  width: 15rem;
+  margin: auto;
+  width: 20rem;
 }
 
 .subscirbe-footer button {
@@ -436,7 +439,7 @@ header {
 }
 
 .tex-footer a {
-  color: #e75744;
+  color: #f75423;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -463,6 +466,14 @@ header {
 
 .footer-footer a {
   color: gray;
+}
+
+.center-footer {
+  flex: 1;
+}
+
+.right-footer {
+  flex: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -571,7 +582,7 @@ header {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
-  background-color: #18a8bb;
+  background-color: #08abdc;
   color: white;
   font-size: 0.85rem;
   font-weight: bolder;
@@ -582,7 +593,7 @@ header {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
-  background-color: #e78d44;
+  background-color: #f79b23;
   color: white;
   font-size: 0.85rem;
   font-weight: bolder;
@@ -708,7 +719,7 @@ header {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
-  background-color: #e75744;
+  background-color: #f75423;
   color: white;
   font-size: 0.85rem;
   font-weight: bolder;
@@ -724,7 +735,7 @@ header {
 
 .results-container {
   padding: 3rem;
-  background-color: rgba(231, 87, 68, 0.2);
+  background-color: rgba(247, 84, 35, 0.2);
   border-radius: 1rem;
   margin: 1rem;
   display: grid;
@@ -768,7 +779,7 @@ iframe {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
-  background-color: #18a8bb;
+  background-color: #08abdc;
   color: white;
   font-size: 0.85rem;
   font-weight: bolder;
@@ -792,11 +803,11 @@ iframe {
 
 .description-iten span {
   margin-left: 1rem;
-  color: #18a8bb;
+  color: #08abdc;
 }
 
 .description-iten:hover {
-  box-shadow: 0.1rem 0.1rem 0.8rem 0 #18a8bb;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0 #08abdc;
 }
 
 .text-description {
@@ -805,7 +816,7 @@ iframe {
 }
 
 .map-section {
-  color: #e75744;
+  color: #f75423;
   margin: 2rem;
 }
 
@@ -825,17 +836,17 @@ iframe {
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
+  margin-top: 2rem;
 }
 
 .central-container img {
   border-radius: 0.3rem;
   display: block;
   margin: auto;
-  width: 80%;
 }
 
 .score-container span {
-  color: #e75744;
+  color: #f75423;
   font-size: 1.5rem;
 }
 
@@ -852,7 +863,7 @@ iframe {
     flex-direction: row;
   }
   .central-container img {
-    margin: 1rem;
+    margin: auto 1rem;
   }
 }
 
@@ -877,6 +888,7 @@ iframe {
     margin: 3rem 15rem;
   }
   .central-container img {
+    margin-left: 4rem;
     flex: 1;
   }
 }
@@ -903,15 +915,15 @@ a:hover {
 }
 
 .bg-one {
-  background-color: #e75744;
+  background-color: #f75423;
 }
 
 .bg-two {
-  background-color: #57777c;
+  background-color: #4c8698;
 }
 
 .bg-three {
-  background-color: #18a8bb;
+  background-color: #08abdc;
 }
 
 .bg-black {
@@ -931,11 +943,11 @@ a:hover {
 }
 
 .text-color-one {
-  color: #e75744;
+  color: #f75423;
 }
 
 .text-color-two {
-  color: #57777c;
+  color: #4c8698;
 }
 
 .text-color-three {
@@ -955,8 +967,8 @@ a:hover {
 }
 
 button:hover {
-  background-color: #f2fdef;
-  color: #0d0210;
+  background-color: #fefffe;
+  color: #010001;
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

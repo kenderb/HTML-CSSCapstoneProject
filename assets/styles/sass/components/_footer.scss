@@ -52,14 +52,17 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 }
 
 .subscirbe-footer {
+  flex: 20%;
   text-align: center;
+  margin: auto;
 
   h4 {
     margin-bottom: 1rem;
   }
 
   form {
-    width: 15rem;
+    margin: auto;
+    width: 20rem;
   }
 
   button {
@@ -110,6 +113,14 @@ $border-theme: 1px solid  darken($gray-one, 70%);
   a {
     color: gray;
   }
+}
+
+.center-footer {
+  flex: 1;
+}
+
+.right-footer {
+  flex: 2;
 }
 
 @media screen and (min-width: 768px) {
