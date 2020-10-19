@@ -1,24 +1,24 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Newsweek-Clone-Page
+# HTML CSS Capstone Project
 
-> This project is a imitation of the newsweek.com website built for educational purposes.
+> This project is an assignment for the HTML/CSS capstone project.
 
-![screenshot](./assets/images/screenshot.png)
+![screenshot](./assets/images/screen-shots/2020-10-19_13-27.png)
 
-Bootstrap was implemented in order to get familiar with the tool and new features were
-used as well.
+Sass was implemented to use new features also I use flexbox grid system and position.
 
 ## Built With
 
 - HTML
 - CSS
-- Bootstrap
+- Sass
 - Fontawesome
+- VS Code
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/kenderb/Using-bootstrap/c46280b67f775fde59cefd52a40aff5bbb5f71ea/index.html)
+[Live Demo Link](https://kenderb.github.io/HTML-CSS-capstone/)
 
 
 ## Getting Started
@@ -26,13 +26,13 @@ used as well.
 
 To get a local copy up and running follow these simple example steps.
 
-### You need to clone the repository on your device.
+### - You need to clone the repository on your device.
 
-### Unzip the repository or just clone it using git or github.
+### - Unzip the repository or just clone it using git or github.
 
-### Grab the index.html file and open it on your favorite browser
+### - Grab the index.html file and open it on your favorite browser
 
-## Try the page with the Demo Link above.
+##  - Try the page with the Demo Link above.
 
 
 
@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kenderb/Using-bootstrap/issues).
+Feel free to check the [issues page](https://github.com/kenderb/HTML-CSSCapstoneProject/issues).
 
 ## Show your support
 
@@ -56,5 +56,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- We3schools
-- Stack Overflow
+- We3schools.
+- Stack Overflow.
+- Sass Documentation.
