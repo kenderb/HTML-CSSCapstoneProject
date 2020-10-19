@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Kender Bolivar**
 
-- GitHub: [@kenderb](https://github.com/ken)
+- GitHub: [@kenderb](https://github.com/kenderb)
 - Twitter: [@twitterhandle](https://twitter.com/KBTarts )
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kender-bolivar-1736086b/ )
 
