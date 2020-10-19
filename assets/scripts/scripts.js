@@ -7,14 +7,5 @@ listSearchTag.forEach(element => {
   };
 });
 
-const descriptionTag = document.querySelectorAll(".description-selector");
-
-descriptionTag.forEach(element2 => {
-  element2.onclick = function () {
-    window.location="./search-result.html";
-  };
-});
-
-
 
 
