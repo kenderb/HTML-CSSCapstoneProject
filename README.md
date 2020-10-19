@@ -55,7 +55,7 @@ Feel free to check the [issues page](https://github.com/kenderb/HTML-CSSCapstone
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- PatashuleKE Original design [@PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE
 - We3schools.
 - Stack Overflow.
 - Sass Documentation.
