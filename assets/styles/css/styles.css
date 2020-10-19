@@ -396,7 +396,7 @@ header {
 }
 
 .subscirbe-footer {
-  flex: 20%;
+  flex: 2;
   text-align: center;
   margin: auto;
 }
@@ -407,7 +407,7 @@ header {
 
 .subscirbe-footer form {
   margin: auto;
-  width: 20rem;
+  width: 90%;
 }
 
 .subscirbe-footer button {
@@ -417,8 +417,8 @@ header {
   background-color: gray;
   padding: 0.5rem;
   color: white;
-  margin-left: -1rem;
-  width: 5.2rem;
+  margin-left: -0.8rem;
+  width: 20%;
 }
 
 .subscirbe-footer input {
@@ -428,6 +428,7 @@ header {
   background-color: #181818;
   padding: 0.5rem;
   color: white;
+  width: 80%;
 }
 
 .tex-footer {
@@ -503,6 +504,9 @@ header {
     position: relative;
     display: inline-block;
   }
+  .subscirbe-footer input {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -517,6 +521,9 @@ header {
   .ul-footer li {
     padding: 3%;
     font-size: 0.8rem;
+  }
+  .subscirbe-footer input {
+    width: 35%;
   }
 }
 
@@ -708,14 +715,20 @@ header {
 }
 
 .searh-iten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   width: 100%;
   height: 100%;
   padding: 1rem;
 }
 
-.searh-iten button {
-  margin-top: auto;
+.searh-iten .description-selector {
+  display: block;
+  width: 100%;
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
@@ -725,6 +738,10 @@ header {
   font-weight: bolder;
   margin-top: 1rem;
   padding: 0.7rem;
+}
+
+.searh-iten .description-selector:hover {
+  cursor: pointer;
 }
 
 .searh-iten a {
@@ -843,6 +860,7 @@ iframe {
   border-radius: 0.3rem;
   display: block;
   margin: auto;
+  max-width: 25rem;
 }
 
 .score-container span {

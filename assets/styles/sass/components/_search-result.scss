@@ -23,18 +23,26 @@ $number-of-images: 9;
 }
 
 .searh-iten {
+  @include display-flex(column);
+
+  justify-content: space-between;
   text-align: center;
   width: $box-size;
   height: $box-size;
   padding: 1rem;
 
-  button {
-    margin-top: auto;
+  .description-selector {
+    display: block;
+    width: 100%;
 
     @include button($primary-color);
     @include button-font(white);
 
     padding: 0.7rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   a {

@@ -52,7 +52,7 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 }
 
 .subscirbe-footer {
-  flex: 20%;
+  flex: 2;
   text-align: center;
   margin: auto;
 
@@ -62,20 +62,22 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 
   form {
     margin: auto;
-    width: 20rem;
+    width: 90%;
   }
 
   button {
     @include button(gray);
     @include footer-buttons;
 
-    margin-left: -1rem;
-    width: 5.2rem;
+    margin-left: -0.8rem;
+    width: 20%;
   }
 
   input {
     @include button($black-one);
     @include footer-buttons;
+
+    width: 80%;
   }
 }
 
@@ -154,6 +156,12 @@ $border-theme: 1px solid  darken($gray-one, 70%);
     position: relative;
     display: inline-block;
   }
+
+  .subscirbe-footer {
+    input {
+      width: 60%;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -171,6 +179,12 @@ $border-theme: 1px solid  darken($gray-one, 70%);
     li {
       padding: 3%;
       font-size: 0.8rem;
+    }
+  }
+
+  .subscirbe-footer {
+    input {
+      width: 35%;
     }
   }
 }
