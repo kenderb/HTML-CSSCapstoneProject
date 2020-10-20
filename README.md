@@ -2,7 +2,7 @@
 
 # HTML CSS Capstone Project
 
-> This project is an assignment for the HTML/CSS capstone project.
+> This project is an assignment for the HTML/CSS capstone project base on a reference page to show the learning got into the module, I got more practice on this project and all those challenges have done before help me to progress.
 
 ![screenshot](./assets/images/screen-shots/2020-10-19_13-27.png)
 
