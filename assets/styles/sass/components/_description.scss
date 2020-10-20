@@ -1,0 +1,148 @@
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-description-image {
+  width: 5rem;
+}
+
+.name-store {
+  font-size: 1.5rem;
+}
+
+.description-section {
+  margin: 1rem;
+  margin-top: 5rem;
+  border: 0.1rem solid #5a5a5a23;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background: $gray-one;
+
+  button {
+    display: block;
+    margin-left: auto;
+    background-color: $third-color;
+    color: white;
+  }
+}
+
+.description-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 1rem auto;
+}
+
+.description-iten {
+  padding: 1rem;
+  border: 0.1rem solid #1f96db4f;
+  text-align: center;
+  font-weight: bold;
+
+  span {
+    margin-left: 1rem;
+    color: $third-color;
+  }
+
+  &:hover {
+    box-shadow: 0.1rem 0.1rem 0.8rem 0 $third-color;
+  }
+}
+
+.text-description {
+  text-align: justify;
+  margin: 2rem;
+}
+
+.map-section {
+  color: $primary-color;
+  margin: 2rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  iframe {
+    height: 20rem;
+  }
+}
+
+.central-container {
+  justify-content: stretch;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 2rem;
+
+  img {
+    border-radius: 0.3rem;
+    display: block;
+    margin: auto;
+    max-width: 25rem;
+  }
+}
+
+.score-container {
+  span {
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-section {
+    button {
+      margin-right: 4.1rem;
+    }
+  }
+
+  .description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 10%);
+    align-items: center;
+  }
+
+  .central-container {
+    flex-direction: row;
+
+    img {
+      margin: auto 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 3rem);
+    margin: 4rem;
+    flex: 2;
+  }
+
+  .description-section {
+    margin: 4rem;
+
+    button {
+      margin-right: 6rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .text-description {
+    margin: auto 10rem;
+  }
+
+  .map-section {
+    margin: 3rem 15rem;
+  }
+
+  .central-container {
+    img {
+      margin-left: 4rem;
+      flex: 1;
+    }
+  }
+}

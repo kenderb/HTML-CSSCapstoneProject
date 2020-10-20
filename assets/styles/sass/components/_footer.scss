@@ -1,0 +1,184 @@
+$border-theme: 1px solid  darken($gray-one, 70%);
+
+.more-container {
+  flex-direction: column;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.ul-container {
+  padding: 2rem;
+  text-align: center;
+  align-items: stretch;
+}
+
+.ul-footer {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  font-size: 0.7rem;
+  border-top: $border-theme;
+  border-bottom: $border-theme;
+  padding: 1rem 0;
+
+  a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  li {
+    margin: 0.5rem;
+    display: inline;
+  }
+}
+
+.logo-footer-container {
+  z-index: 2;
+  background-color: $black-one;
+  margin: auto;
+  $width-logo: 5rem;
+
+  overflow: hidden;
+  width: $width-logo;
+  height: $width-logo;
+  border: $border-theme;
+  border-radius: 50%;
+
+  img {
+    background-color: $black-one;
+    padding: 1.6rem;
+    width: $width-logo;
+  }
+}
+
+.subscirbe-footer {
+  flex: 2;
+  text-align: center;
+  margin: auto;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    margin: auto;
+    width: 90%;
+  }
+
+  button {
+    margin-left: -0.8rem;
+    width: 20%;
+    background-color: gray;
+  }
+
+  input {
+    width: 80%;
+    background-color: $black-one;
+  }
+}
+
+.tex-footer {
+  text-align: center;
+
+  h4 {
+    margin: 1rem;
+  }
+
+  a {
+    color: $primary-color;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+}
+
+.social-media-icons {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+
+  li {
+    display: inline;
+    margin: 0.2rem;
+  }
+}
+
+.footer-footer {
+  flex-direction: column;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  padding: 1.5rem;
+
+  a {
+    color: gray;
+  }
+}
+
+.center-footer {
+  flex: 1;
+}
+
+.right-footer {
+  flex: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .more-container {
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 1rem;
+  }
+
+  .footer-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-media-icons {
+    margin-bottom: 0;
+  }
+
+  .ul-footer {
+    width: 45%;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .logo-footer-container {
+    top: 2.2rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .subscirbe-footer {
+    input {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-footer-container {
+    top: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+
+    img {
+      width: 6rem;
+    }
+  }
+
+  .ul-footer {
+    li {
+      padding: 3%;
+      font-size: 0.8rem;
+    }
+  }
+
+  .subscirbe-footer {
+    input {
+      width: 35%;
+    }
+  }
+}

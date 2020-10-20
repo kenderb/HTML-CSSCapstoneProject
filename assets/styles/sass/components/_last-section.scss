@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'button-base';
+
+.last-section {
+  font-weight: bolder;
+  color: $secondary-color;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  img {
+    width: 15rem;
+    padding: 1.2rem;
+    order: -1;
+  }
+}
+
+.last-section-content {
+  padding: 1rem;
+}
+
+.section-text {
+  font-size: 1.1rem;
+
+  button {
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    background-color: white;
+  }
+}
+
+.small-text {
+  max-width: 25rem;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-text {
+    order: -2;
+  }
+
+  .last-section-content {
+    padding: 2rem 4rem;
+  }
+
+  .last-section {
+    .d-flex-col {
+      justify-content: space-between;
+    }
+
+    img {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .last-section {
+    img {
+      width: 20rem;
+    }
+
+    .d-flex-col {
+      justify-content: center;
+    }
+  }
+
+  .last-section-content {
+    padding: 2rem 10rem;
+  }
+
+  .section-text {
+    font-size: 2rem;
+    width: 50%;
+
+    button {
+      margin-top: 5rem;
+      font-size: 1rem;
+    }
+  }
+
+  .small-text {
+    font-size: 1rem;
+  }
+}

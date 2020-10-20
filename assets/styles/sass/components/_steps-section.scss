@@ -1,0 +1,66 @@
+@import 'variables';
+
+@mixin bg-hover {
+  background-color: $hover-color;
+}
+
+.steps-section {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: $primary-color;
+  }
+}
+
+.steps-content {
+  background-color: $gray-one;
+  border-radius: 0.5rem;
+  border: 1px solid #80808046;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem;
+  min-height: 20rem;
+
+  i {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  &:hover,
+  &:active {
+    @include bg-hover;
+
+    transform: scale(1.02);
+    box-shadow: 1rem 0.8rem 0.8rem 0 #4444443f;
+    cursor: pointer;
+  }
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .steps-grid {
+    margin: auto;
+    max-width: 70rem;
+  }
+}

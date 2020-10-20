@@ -1,0 +1,91 @@
+@mixin width-inputs {
+  width: 45%;
+}
+
+.form-search-container {
+  margin: 2.5rem 1rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: $gray-one;
+  text-align: center;
+
+  h2 {
+    color: gray;
+  }
+}
+
+.form-filter-container {
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.input-container {
+  flex-direction: row;
+  font-weight: bolder;
+  margin: 0.5rem 0;
+  width: 100%;
+  justify-content: space-between;
+
+  select {
+    @include width-inputs;
+
+    background-color: white;
+    padding: 0.5rem;
+    appearance: none;
+    color: black;
+  }
+
+  input {
+    @include width-inputs;
+
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+  }
+}
+
+.search-button {
+  background-color: $third-color;
+  color: white;
+}
+
+.clear-button {
+  background-color: adjust-hue($primary-color, 20deg);
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .form-filter-container {
+    flex-direction: row;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    input,
+    select {
+      width: 95%;
+    }
+  }
+
+  .buttons-filter-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 5rem;
+
+    button + button {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .clear-button {
+    width: 10rem;
+  }
+
+  .form-search-container {
+    padding: 4rem 5rem;
+  }
+}
