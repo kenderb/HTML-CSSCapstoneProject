@@ -28,8 +28,6 @@ $number-of-images: 9;
 }
 
 .searh-iten {
-  @extend .display-flex;
-
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
@@ -40,9 +38,6 @@ $number-of-images: 9;
   .description-selector {
     display: block;
     width: 100%;
-
-    @extend .button-font;
-
     padding: 0.7rem;
     background-color: $primary-color;
     color: white;

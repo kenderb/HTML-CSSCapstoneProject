@@ -14,7 +14,7 @@
     font-size: 1.1rem;
     margin-top: 2rem;
     text-align: center;
-    background-color: $third-color white;
+    background-color: white;
   }
 }
 
@@ -54,8 +54,6 @@
 }
 
 .d-flex-col {
-  @extend .display-flex;
-
   flex-direction: column;
 }
 

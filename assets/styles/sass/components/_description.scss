@@ -23,9 +23,6 @@ iframe {
   button {
     display: block;
     margin-left: auto;
-
-    @extend .button-font;
-
     background-color: $third-color;
     color: white;
   }

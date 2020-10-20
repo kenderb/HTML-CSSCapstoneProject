@@ -27,8 +27,6 @@
   justify-content: space-between;
 
   select {
-    @extend .button-font;
-
     @include width-inputs;
 
     background-color: white;
@@ -38,8 +36,6 @@
   }
 
   input {
-    @extend .button-font;
-
     @include width-inputs;
 
     padding: 0.5rem;
@@ -49,15 +45,11 @@
 }
 
 .search-button {
-  @extend .button-font;
-
   background-color: $third-color;
   color: white;
 }
 
 .clear-button {
-  @extend .button-font;
-
   background-color: adjust-hue($primary-color, 20deg);
   color: white;
 }
