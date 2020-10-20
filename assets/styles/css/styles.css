@@ -23,10 +23,6 @@ header {
   position: sticky;
 }
 
-a {
-  text-decoration: none;
-}
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -34,50 +30,6 @@ a {
   flex-direction: column;
   padding: 0.5rem 1rem;
   color: white;
-}
-
-button:hover {
-  background-color: #fefffe;
-  color: #010001;
-  cursor: pointer;
-}
-
-.description-section button {
-  display: block;
-  margin-left: auto;
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: #08abdc;
-  color: white;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
-}
-
-.social-media-icons li {
-  display: inline;
-  margin: 0.2rem;
-}
-
-.subscirbe-footer button {
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: gray;
-  padding: 0.5rem;
-  color: white;
-  margin-left: -0.8rem;
-  width: 20%;
-}
-
-.steps-content i {
-  margin-top: 1rem;
-  font-size: 2.5rem;
-}
-
-.ul-footer li {
-  margin: 0.5rem;
-  display: inline;
 }
 
 .navbar img {
@@ -90,27 +42,6 @@ button:hover {
 
 .navbar ul li {
   display: inline;
-}
-
-.search-section button {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
-  font-weight: bolder;
-  font-size: 1.1rem;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.section-text button {
-  margin-top: 1rem;
-  font-weight: bolder;
-  font-size: 0.8rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
-  padding: 0.8rem;
 }
 
 .navbar button {
@@ -157,33 +88,28 @@ button:hover {
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
-
   .navbar li {
     padding-right: 1rem;
   }
-
   .navbar li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
   }
-
   .navbar li a:hover {
     text-decoration: underline;
   }
-
   .navbar li:hover {
     background-color: #f8734a;
   }
-
   .navbar button {
     padding: 0.8rem 0.8rem;
   }
-
   .nav-text-display {
     display: inline;
   }
@@ -201,6 +127,17 @@ button:hover {
   background-position: center;
   height: 30rem;
   padding-top: 5rem;
+  text-align: center;
+}
+
+.search-section button {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -259,12 +196,10 @@ button:hover {
     align-items: center;
     flex-direction: row;
   }
-
   .search-form {
     max-width: 60rem;
     padding: 2rem;
   }
-
   .search-form .button-form {
     color: white;
     font-weight: bolder;
@@ -279,7 +214,7 @@ button:hover {
   padding-bottom: 5rem;
 }
 
-.steps-section h1 {
+.steps-section h2 {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1.3rem;
@@ -297,13 +232,17 @@ button:hover {
   min-height: 20rem;
 }
 
+.steps-content i {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
 .steps-content h3 {
   margin: 1rem;
   font-size: 1.5rem;
 }
 
-.steps-content:hover,
-.steps-content:active {
+.steps-content:hover, .steps-content:active {
   background-color: #fefffe;
   transform: scale(1.02);
   box-shadow: 1rem 0.8rem 0.8rem 0 #4444443f;
@@ -350,6 +289,17 @@ button:hover {
   font-size: 1.1rem;
 }
 
+.section-text button {
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: white;
+  padding: 0.8rem;
+}
+
 .small-text {
   max-width: 25rem;
   font-size: 0.7rem;
@@ -360,15 +310,12 @@ button:hover {
   .section-text {
     order: -2;
   }
-
   .last-section-content {
     padding: 2rem 4rem;
   }
-
   .last-section .d-flex-col {
     justify-content: space-between;
   }
-
   .last-section img {
     padding: 0;
   }
@@ -378,25 +325,20 @@ button:hover {
   .last-section img {
     width: 20rem;
   }
-
   .last-section .d-flex-col {
     justify-content: center;
   }
-
   .last-section-content {
     padding: 2rem 10rem;
   }
-
   .section-text {
     font-size: 2rem;
     width: 50%;
   }
-
   .section-text button {
     margin-top: 5rem;
     font-size: 1rem;
   }
-
   .small-text {
     font-size: 1rem;
   }
@@ -431,6 +373,11 @@ button:hover {
   font-weight: bolder;
 }
 
+.ul-footer li {
+  margin: 0.5rem;
+  display: inline;
+}
+
 .logo-footer-container {
   z-index: 2;
   background-color: #181818;
@@ -463,7 +410,19 @@ button:hover {
   width: 90%;
 }
 
+.subscirbe-footer button {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: gray;
+  padding: 0.5rem;
+  color: white;
+  margin-left: -0.8rem;
+  width: 20%;
+}
+
 .subscirbe-footer input {
+  padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
   background-color: #181818;
@@ -489,6 +448,11 @@ button:hover {
 .social-media-icons {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+}
+
+.social-media-icons li {
+  display: inline;
+  margin: 0.2rem;
 }
 
 .footer-footer {
@@ -520,16 +484,13 @@ button:hover {
     position: relative;
     bottom: 1rem;
   }
-
   .footer-footer {
     flex-direction: row;
     justify-content: space-between;
   }
-
   .social-media-icons {
     margin-bottom: 0;
   }
-
   .ul-footer {
     width: 45%;
     display: inline-block;
@@ -538,13 +499,11 @@ button:hover {
     margin-left: -1rem;
     margin-right: -1rem;
   }
-
   .logo-footer-container {
     top: 2.2rem;
     position: relative;
     display: inline-block;
   }
-
   .subscirbe-footer input {
     width: 60%;
   }
@@ -556,16 +515,13 @@ button:hover {
     width: 6rem;
     height: 6rem;
   }
-
   .logo-footer-container img {
     width: 6rem;
   }
-
   .ul-footer li {
     padding: 3%;
     font-size: 0.8rem;
   }
-
   .subscirbe-footer input {
     width: 35%;
   }
@@ -593,6 +549,7 @@ button:hover {
 
 .input-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   font-weight: bolder;
@@ -602,6 +559,7 @@ button:hover {
 }
 
 .input-container select {
+  padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
   background-color: white;
@@ -615,6 +573,7 @@ button:hover {
 }
 
 .input-container input {
+  padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
   background-color: white;
@@ -652,33 +611,28 @@ button:hover {
   .form-filter-container {
     flex-direction: row;
   }
-
   .input-container {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .input-container input,
   .input-container select {
     width: 95%;
   }
-
   .buttons-filter-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     align-items: flex-end;
     height: 5rem;
   }
-
   .buttons-filter-container button + button {
     margin-left: 0.5rem;
   }
-
   .clear-button {
     width: 10rem;
   }
-
   .form-search-container {
     padding: 4rem 5rem;
   }
@@ -762,6 +716,7 @@ button:hover {
 
 .searh-iten {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
@@ -774,6 +729,7 @@ button:hover {
 .searh-iten .description-selector {
   display: block;
   width: 100%;
+  padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
   background-color: #f75423;
@@ -834,6 +790,19 @@ iframe {
   background: #f0f0f0;
 }
 
+.description-section button {
+  display: block;
+  margin-left: auto;
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: #08abdc;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
 .description-container {
   width: 100%;
   display: grid;
@@ -868,7 +837,7 @@ iframe {
   margin: 2rem;
 }
 
-.map-section h2 {
+.map-section h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -879,6 +848,8 @@ iframe {
 
 .central-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
@@ -901,17 +872,14 @@ iframe {
   .description-section button {
     margin-right: 4.1rem;
   }
-
   .description-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 10%);
     align-items: center;
   }
-
   .central-container {
     flex-direction: row;
   }
-
   .central-container img {
     margin: auto 1rem;
   }
@@ -924,24 +892,19 @@ iframe {
     margin: 4rem;
     flex: 2;
   }
-
   .description-section {
     margin: 4rem;
   }
-
   .description-section button {
     margin-right: 6rem;
     margin-bottom: 1rem;
   }
-
   .text-description {
     margin: auto 10rem;
   }
-
   .map-section {
     margin: 3rem 15rem;
   }
-
   .central-container img {
     margin-left: 4rem;
     flex: 1;
@@ -951,6 +914,10 @@ iframe {
 body {
   background: white;
   font-family: Quicksand-Variable, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:hover {
@@ -1011,7 +978,15 @@ a:hover {
 
 .d-flex-row {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
+
+button:hover {
+  background-color: #fefffe;
+  color: #010001;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
