@@ -1,8 +1,7 @@
-@mixin button($bg-color) {
+.button {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
-  background-color: $bg-color;
 }
 
 @mixin footer-buttons {
@@ -10,8 +9,7 @@
   color: white;
 }
 
-@mixin button-font($font-color) {
-  color: $font-color;
+.button-font {
   font-size: 0.85rem;
   font-weight: bolder;
   margin-top: 1rem;

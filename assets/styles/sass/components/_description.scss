@@ -1,3 +1,4 @@
+
 iframe {
   width: 100%;
   height: 100%;
@@ -23,8 +24,11 @@ iframe {
     display: block;
     margin-left: auto;
 
-    @include button($third-color);
-    @include button-font(white);
+    @extend .button;
+    @extend .button-font;
+
+    background-color: $third-color;
+    color: white;
   }
 }
 
@@ -72,9 +76,10 @@ iframe {
 }
 
 .central-container {
-  @include display-flex(column);
+  @extend .display-flex;
 
   justify-content: stretch;
+  flex-direction: column;
   align-items: stretch;
   margin-top: 2rem;
 

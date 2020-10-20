@@ -26,9 +26,10 @@
     font-weight: bolder;
     font-size: 0.8rem;
 
-    @include button(white);
+    @extend .button;
 
     padding: 0.8rem;
+    background-color: white;
   }
 }
 

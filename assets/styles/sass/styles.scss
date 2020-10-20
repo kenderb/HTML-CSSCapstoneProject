@@ -1,3 +1,4 @@
+@import 'components/display-flex';
 @import 'components/reset';
 @import 'components/navbar';
 @import 'components/variables';
@@ -76,8 +77,9 @@ a {
 }
 
 .d-flex-row {
-  @include display-flex(row);
+  @extend .display-flex;
 
+  flex-direction: row;
   justify-content: space-between;
 }
 

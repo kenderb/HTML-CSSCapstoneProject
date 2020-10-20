@@ -1,3 +1,9 @@
+.display-flex, .d-flex-col, .more-container, .footer-footer, .form-filter-container, .input-container, .searh-iten, .central-container, .d-flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +29,13 @@ header {
   position: sticky;
 }
 
-.navbar {
+.dflex, .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.navbar {
   flex-direction: column;
   padding: 0.5rem 1rem;
   color: white;
@@ -87,9 +96,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -120,6 +126,18 @@ header {
   src: url("/assets/fonts/Quicksand-VariableFont_wght.ttf");
 }
 
+.button, .search-section button, .search-form input, .search-form .button-form, .section-text button, .subscirbe-footer button, .subscirbe-footer input, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+}
+
+.button-font, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
 .search-section {
   background-image: linear-gradient(#140909, #03030334, #0e0e0e), url("/assets/images/BG-imge-searh-section.jpg");
   background-attachment: fixed;
@@ -131,14 +149,11 @@ header {
 }
 
 .search-section button {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
   font-weight: bolder;
   font-size: 1.1rem;
   margin-top: 2rem;
   text-align: center;
+  background-color: #08abdc white;
 }
 
 .header-styling {
@@ -161,13 +176,10 @@ header {
 }
 
 .search-form input {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
   font-size: 0.8rem;
   font-weight: bold;
   width: 100%;
+  background-color: white;
 }
 
 .search-form .button-form {
@@ -176,24 +188,15 @@ header {
   font-size: 1.1rem;
   margin-top: 0.4rem;
   width: 100%;
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
   background-color: #f75423;
 }
 
 .d-flex-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .d-flex-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
   }
   .search-form {
@@ -268,6 +271,18 @@ header {
   }
 }
 
+.button, .search-section button, .search-form input, .search-form .button-form, .section-text button, .subscirbe-footer button, .subscirbe-footer input, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+}
+
+.button-font, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
 .last-section {
   font-weight: bolder;
   color: white;
@@ -293,11 +308,8 @@ header {
   margin-top: 1rem;
   font-weight: bolder;
   font-size: 0.8rem;
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
   padding: 0.8rem;
+  background-color: white;
 }
 
 .small-text {
@@ -345,9 +357,6 @@ header {
 }
 
 .more-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 1rem;
   padding-bottom: 3rem;
@@ -411,24 +420,18 @@ header {
 }
 
 .subscirbe-footer button {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: gray;
   padding: 0.5rem;
   color: white;
   margin-left: -0.8rem;
   width: 20%;
+  background-color: gray;
 }
 
 .subscirbe-footer input {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: #181818;
   padding: 0.5rem;
   color: white;
   width: 80%;
+  background-color: #181818;
 }
 
 .tex-footer {
@@ -456,9 +459,6 @@ header {
 }
 
 .footer-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   font-weight: bolder;
   font-size: 0.7rem;
@@ -541,16 +541,10 @@ header {
 
 .form-filter-container {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 .input-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   font-weight: bolder;
   margin: 0.5rem 0;
@@ -559,52 +553,28 @@ header {
 }
 
 .input-container select {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
-  color: black;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
   width: 45%;
+  background-color: white;
   padding: 0.5rem;
   appearance: none;
+  color: black;
 }
 
 .input-container input {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
-  background-color: white;
-  color: black;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
   width: 45%;
   padding: 0.5rem;
+  background-color: white;
+  color: black;
 }
 
 .search-button {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
   background-color: #08abdc;
   color: white;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
 }
 
 .clear-button {
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
   background-color: #f79b23;
   color: white;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -620,9 +590,8 @@ header {
     width: 95%;
   }
   .buttons-filter-container {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    display: flex;
     flex-direction: row;
     align-items: flex-end;
     height: 5rem;
@@ -638,76 +607,47 @@ header {
   }
 }
 
-.bg-image-1 {
-  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-1.jpg");
+.bg-features, .bg-image-1, .bg-image-2, .bg-image-3, .bg-image-4, .bg-image-5, .bg-image-6, .bg-image-7, .bg-image-8, .bg-image-9 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
+}
+
+.bg-image-1 {
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-1.jpg");
 }
 
 .bg-image-2 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-3 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-4 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-5 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-5.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-6 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-6.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-7 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-7.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-8 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-8.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .bg-image-9 {
   background-image: linear-gradient(#140909, #00000063, #0e0e0e), url("/assets/images/bg-9.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
 }
 
 .result-section h1 {
@@ -715,9 +655,6 @@ header {
 }
 
 .searh-iten {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
@@ -729,15 +666,9 @@ header {
 .searh-iten .description-selector {
   display: block;
   width: 100%;
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
+  padding: 0.7rem;
   background-color: #f75423;
   color: white;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
-  padding: 0.7rem;
 }
 
 .searh-iten .description-selector:hover {
@@ -793,14 +724,8 @@ iframe {
 .description-section button {
   display: block;
   margin-left: auto;
-  padding: 0.8rem 2rem;
-  border: 1px solid gray;
-  border-radius: 0.2rem;
   background-color: #08abdc;
   color: white;
-  font-size: 0.85rem;
-  font-weight: bolder;
-  margin-top: 1rem;
 }
 
 .description-container {
@@ -847,11 +772,8 @@ iframe {
 }
 
 .central-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   justify-content: stretch;
+  flex-direction: column;
   align-items: stretch;
   margin-top: 2rem;
 }
@@ -977,9 +899,6 @@ a:hover {
 }
 
 .d-flex-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }

@@ -1,11 +1,16 @@
 $box-size: 100%;
 
-@mixin bg-image($image-path) {
-  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url($image-path);
+.bg-features {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0.5rem 0.5rem 0.3rem 0 #1f1f1f60;
+}
+
+@mixin bg-image($image-path) {
+  background-image: linear-gradient(#140909, #00000063, #0e0e0e), url($image-path);
+
+  @extend .bg-features;
 }
 
 $number-of-images: 9;
@@ -23,8 +28,9 @@ $number-of-images: 9;
 }
 
 .searh-iten {
-  @include display-flex(column);
+  @extend .display-flex;
 
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
   width: $box-size;
@@ -35,10 +41,12 @@ $number-of-images: 9;
     display: block;
     width: 100%;
 
-    @include button($primary-color);
-    @include button-font(white);
+    @extend .button;
+    @extend .button-font;
 
     padding: 0.7rem;
+    background-color: $primary-color;
+    color: white;
 
     &:hover {
       cursor: pointer;

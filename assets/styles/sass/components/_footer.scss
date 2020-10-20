@@ -1,8 +1,9 @@
 $border-theme: 1px solid  darken($gray-one, 70%);
 
 .more-container {
-  @include display-flex(column);
+  @extend .display-flex;
 
+  flex-direction: column;
   padding: 1rem;
   padding-bottom: 3rem;
 }
@@ -66,18 +67,22 @@ $border-theme: 1px solid  darken($gray-one, 70%);
   }
 
   button {
-    @include button(gray);
+    @extend .button;
+
     @include footer-buttons;
 
     margin-left: -0.8rem;
     width: 20%;
+    background-color: gray;
   }
 
   input {
-    @include button($black-one);
+    @extend .button;
+
     @include footer-buttons;
 
     width: 80%;
+    background-color: $black-one;
   }
 }
 
@@ -106,8 +111,9 @@ $border-theme: 1px solid  darken($gray-one, 70%);
 }
 
 .footer-footer {
-  @include display-flex(column);
+  @extend .display-flex;
 
+  flex-direction: column;
   font-weight: bolder;
   font-size: 0.7rem;
   padding: 1.5rem;

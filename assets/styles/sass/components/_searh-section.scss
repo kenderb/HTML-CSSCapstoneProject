@@ -10,12 +10,13 @@
   text-align: center;
 
   button {
-    @include button( white);
+    @extend .button;
 
     font-weight: bolder;
     font-size: 1.1rem;
     margin-top: 2rem;
     text-align: center;
+    background-color: $third-color white;
   }
 }
 
@@ -38,11 +39,12 @@
   background-color: transparentize($secondary-color, 0.4);
 
   input {
-    @include button( white);
+    @extend .button;
 
     font-size: 0.8rem;
     font-weight: bold;
     width: 100%;
+    background-color: white;
   }
 
   .button-form {
@@ -52,17 +54,21 @@
     margin-top: 0.4rem;
     width: 100%;
 
-    @include button($primary-color);
+    @extend .button;
+
+    background-color: $primary-color;
   }
 }
 
 .d-flex-col {
-  @include display-flex(column);
+  @extend .display-flex;
+
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .d-flex-col {
-    @include display-flex(row);
+    flex-direction: row;
   }
 
   .search-form {

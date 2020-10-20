@@ -17,43 +17,58 @@
 .form-filter-container {
   margin-top: 1rem;
 
-  @include display-flex(column);
+  @extend .display-flex;
+
+  flex-direction: column;
 }
 
 .input-container {
-  @include display-flex(row);
+  @extend .display-flex;
 
+  flex-direction: row;
   font-weight: bolder;
   margin: 0.5rem 0;
   width: 100%;
   justify-content: space-between;
 
   select {
-    @include button(white);
-    @include button-font(black);
+    @extend .button;
+    @extend .button-font;
+
     @include width-inputs;
 
+    background-color: white;
     padding: 0.5rem;
     appearance: none;
+    color: black;
   }
 
   input {
-    @include button(white);
-    @include button-font(black);
+    @extend .button;
+    @extend .button-font;
+
     @include width-inputs;
 
     padding: 0.5rem;
+    background-color: white;
+    color: black;
   }
 }
 
 .search-button {
-  @include button($third-color);
-  @include button-font(white);
+  @extend .button;
+  @extend .button-font;
+
+  background-color: $third-color;
+  color: white;
 }
 
 .clear-button {
-  @include button(adjust-hue($primary-color, 20deg));
-  @include button-font(white);
+  @extend .button;
+  @extend .button-font;
+
+  background-color: adjust-hue($primary-color, 20deg);
+  color: white;
 }
 
 @media screen and (min-width: 1024px) {
@@ -72,8 +87,9 @@
   }
 
   .buttons-filter-container {
-    @include display-flex(row);
-
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: flex-end;
     height: 5rem;
 
