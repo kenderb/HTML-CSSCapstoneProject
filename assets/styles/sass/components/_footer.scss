@@ -67,20 +67,12 @@ $border-theme: 1px solid  darken($gray-one, 70%);
   }
 
   button {
-    @extend .button;
-
-    @include footer-buttons;
-
     margin-left: -0.8rem;
     width: 20%;
     background-color: gray;
   }
 
   input {
-    @extend .button;
-
-    @include footer-buttons;
-
     width: 80%;
     background-color: $black-one;
   }

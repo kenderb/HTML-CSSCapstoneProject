@@ -41,7 +41,6 @@ $number-of-images: 9;
     display: block;
     width: 100%;
 
-    @extend .button;
     @extend .button-font;
 
     padding: 0.7rem;

@@ -10,8 +10,6 @@
   text-align: center;
 
   button {
-    @extend .button;
-
     font-weight: bolder;
     font-size: 1.1rem;
     margin-top: 2rem;
@@ -39,8 +37,6 @@
   background-color: transparentize($secondary-color, 0.4);
 
   input {
-    @extend .button;
-
     font-size: 0.8rem;
     font-weight: bold;
     width: 100%;
@@ -53,9 +49,6 @@
     font-size: 1.1rem;
     margin-top: 0.4rem;
     width: 100%;
-
-    @extend .button;
-
     background-color: $primary-color;
   }
 }

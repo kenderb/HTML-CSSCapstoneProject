@@ -24,7 +24,6 @@ iframe {
     display: block;
     margin-left: auto;
 
-    @extend .button;
     @extend .button-font;
 
     background-color: $third-color;
@@ -76,8 +75,6 @@ iframe {
 }
 
 .central-container {
-  @extend .display-flex;
-
   justify-content: stretch;
   flex-direction: column;
   align-items: stretch;

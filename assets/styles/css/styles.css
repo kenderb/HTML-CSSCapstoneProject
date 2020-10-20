@@ -1,4 +1,4 @@
-.display-flex, .d-flex-col, .more-container, .footer-footer, .form-filter-container, .input-container, .searh-iten, .central-container, .d-flex-row {
+.display-flex, .d-flex-col, .more-container, .footer-footer, .searh-iten, .d-flex-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,10 +126,15 @@ header {
   src: url("/assets/fonts/Quicksand-VariableFont_wght.ttf");
 }
 
-.button, .search-section button, .search-form input, .search-form .button-form, .section-text button, .subscirbe-footer button, .subscirbe-footer input, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
+.button {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
+}
+
+.footer-buttons {
+  padding: 0.5rem;
+  color: white;
 }
 
 .button-font, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
@@ -271,10 +276,15 @@ header {
   }
 }
 
-.button, .search-section button, .search-form input, .search-form .button-form, .section-text button, .subscirbe-footer button, .subscirbe-footer input, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
+.button {
   padding: 0.8rem 2rem;
   border: 1px solid gray;
   border-radius: 0.2rem;
+}
+
+.footer-buttons {
+  padding: 0.5rem;
+  color: white;
 }
 
 .button-font, .input-container select, .input-container input, .search-button, .clear-button, .searh-iten .description-selector, .description-section button {
@@ -420,16 +430,12 @@ header {
 }
 
 .subscirbe-footer button {
-  padding: 0.5rem;
-  color: white;
   margin-left: -0.8rem;
   width: 20%;
   background-color: gray;
 }
 
 .subscirbe-footer input {
-  padding: 0.5rem;
-  color: white;
   width: 80%;
   background-color: #181818;
 }
