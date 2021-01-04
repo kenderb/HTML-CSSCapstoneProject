@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# HTML CSS Capstone Project
+# HTML CSS Capstone project
 
 > This project is an assignment for the HTML/CSS capstone project base on a reference page to show the learning got into the module, I got more practice on this project and all those challenges have done before help me to progress.
 
