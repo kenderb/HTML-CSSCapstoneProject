@@ -18,7 +18,7 @@ Sass was implemented to use new features also I use flexbox grid system and posi
 
 ## Live Demo
 
-[Live Demo Link](https://kenderb.github.io/HTML-CSS-capstone/)
+[Live Demo Link](https://rawcdn.githack.com/kenderb/HTML-CSSCapstoneProject/dcde37c9ec2ba09e63b4f6cc5ef672cb13b4fff5/index.html)
 
 
 ## Getting Started
